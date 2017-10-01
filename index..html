@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html5-demo</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="container">
+	<form class="form-horizontal" action="#" method="GET" autocomplete="on">
+	<fieldset>
+
+	<!-- Form Name -->
+	<legend><h3 align="center">This Is Demo Form</h3></legend>
+
+	<!-- Name input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="textinput">Your Name</label>  
+	  <div class="col-md-2">
+	  <input name="fname" type="text" placeholder="First Name" class="form-control input-md" required="" title="Please enter your first name" autofocus> 
+	  </div>
+	  <div class="col-md-2">
+	  <input name="lname" type="text" placeholder="Last Name" class="form-control input-md" required="" title="Please enter your last name (Surname)"> 
+	  </div>
+	</div>
+
+	<!-- Email input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="textinput">Email</label>  
+	  <div class="col-md-4">
+	  <input name="email" type="email" placeholder="Enter your Email" class="form-control input-md" title="Enter your email address. Ex: abc@xyz.com" autocomplete="off" required=""> 
+	  </div>
+	</div>
+
+	<!-- Mobile input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="textinput">Mobile Number</label>  
+	  <div class="col-md-4">
+	  <input name="mobile" type="text" pattern="[7|8|9][0-9]{9}" placeholder="Enter your mobile number" class="form-control input-md" size="10" title="Enter mobile number without (+91). Ex: 9876543210" maxlength="10" onkeypress="return isNumberKey(event)" required=""> 
+	  </div>
+	</div>
+
+	<!-- Address input -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="textarea">Address</label>
+	  <div class="col-md-4">                     
+	    <textarea class="form-control" name="address" placeholder="Enter your address here" required="" title="Enter your permanent address."></textarea>
+	  </div>
+	</div>
+
+	<!-- Gender Radios -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="radios">Gender</label>
+	  <div class="col-md-4">
+	  <div class="radio">
+	    <label for="radios-0">
+	      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+	      Male
+	    </label>
+		</div>
+	  <div class="radio">
+	    <label for="radios-1">
+	      <input type="radio" name="radios" id="radios-1" value="2">
+	      Female
+	    </label>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Bdate input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="textinput">Date of birth</label>  
+	  <div class="col-md-4">
+	  <input name="bdate" type="text" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" placeholder="Select your date of birth" class="form-control input-md" required=""> 
+	  </div>
+	</div>
+
+	<!-- Select City -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="selectbasic">Select City</label>
+	  <div class="col-md-4">
+	    <select id="selectbasic" name="selectbasic" class="form-control" required="">
+	      <option value="">Select your city</option>
+	      <option value="1">Rajkot</option>
+	      <option value="2">Ahmedabad</option>
+	      <option value="3">Surat</option>
+	    </select>
+	  </div>
+	</div>
+
+	<!-- Subjects Checkboxes -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="checkboxes">Select your subject</label>
+	  <div class="col-md-4">
+	    <label class="checkbox-inline" for="checkboxes-0">
+	      <input type="checkbox" name="subject[]" id="checkboxes-0" value="1">
+	      Maths
+	    </label>
+	    <label class="checkbox-inline" for="checkboxes-1">
+	      <input type="checkbox" name="subject[]" id="checkboxes-1" value="2">
+	      Physics
+	    </label>
+	    <label class="checkbox-inline" for="checkboxes-2">
+	      <input type="checkbox" name="subject[]" id="checkboxes-2" value="3">
+	      Chemistry
+	    </label>
+	    <label class="checkbox-inline" for="checkboxes-3">
+	      <input type="checkbox" name="subject[]" id="checkboxes-3" value="4">
+	      English
+	    </label>
+	  </div>
+	</div>
+
+	<!-- Password input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="passwordinput">Password</label>
+	  <div class="col-md-4">
+	    <input name="passwordinput" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$" title="Please enter a password between 6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter" placeholder="Enter your password" class="form-control input-md">
+	  </div>
+	</div>
+
+	<!-- Button -->
+	<div class="form-group">
+	  <div style="text-align: center;">
+	    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit!</button>
+	  </div>
+	</div>
+
+	</fieldset>
+	</form>
+</body>
+</html>
